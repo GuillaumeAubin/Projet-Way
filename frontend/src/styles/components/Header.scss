@@ -1,0 +1,47 @@
+header {
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+
+  a {
+    display: flex;
+    vertical-align: middle;
+
+    #logoHeader {
+      height: 50px;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      font-size: 2.5em;
+      padding-left: 20px;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul li {
+    margin-left: 20px;
+  }
+
+  ul li a {
+    display: flex;
+    align-items: center;
+  }
+
+  ul li a:hover {
+    color: #777;
+  }
+
+  ul li a svg {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,33 @@
+.heading {
+  margin-top: 50px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      padding-right: 10px;
+    }
+  }
+  p {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+}
+
+.form {
+  width: 60%;
+  margin: 50px auto 0 auto;
+  input {
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  button {
+    margin: 10px auto 0 auto;
+  }
+}

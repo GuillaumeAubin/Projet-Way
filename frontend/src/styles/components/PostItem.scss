@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  margin: 0 5px 15px 5px;
+  .leftSide {
+    border-right: solid 1px #ccc;
+    .profilPicture {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      padding: 5px;
+    }
+  }
+  .rightSide {
+    width: 100%;
+    .headPost {
+      display: flex;
+      border-bottom: solid 1px #ccc;
+      padding: 5px;
+    }
+    .mainPost {
+      padding: 5px;
+      text-align: initial;
+    }
+    .footPost {
+      display: flex;
+      border-top: solid 1px #ccc;
+      padding: 5px;
+    }
+  }
+}
