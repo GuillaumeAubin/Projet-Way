@@ -1,9 +1,10 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { deletePost } from "../features/posts/postSlice";
 import profilPicture from "../images/avataaars.png";
 
 function PostItem({ post }) {
   const dispatch = useDispatch();
+  const { user } = useSelector((state) => state.auth);
 
   return (
     <div className="card">
@@ -12,7 +13,10 @@ function PostItem({ post }) {
       </div>
       <div className="rightSide">
         <div className="headPost">
-          <p>Nom</p> ·<p>{new Date(post.createdAt).toLocaleString("fr-FR")}</p>
+          <p>
+            {post.user && user.name} ·{" "}
+            {new Date(post.createdAt).toLocaleString("fr-FR")}
+          </p>
         </div>
         <p className="mainPost">{post.text}</p>
         <div className="footPost">

@@ -1,10 +1,10 @@
 .card {
   display: flex;
-  border: solid 1px #ccc;
+  border: solid 1px #e6e6e6;
   border-radius: 20px;
   margin: 0 5px 15px 5px;
   .leftSide {
-    border-right: solid 1px #ccc;
+    border-right: solid 1px #e6e6e6;
     .profilPicture {
       width: 50px;
       height: 50px;
@@ -17,7 +17,7 @@
     width: 100%;
     .headPost {
       display: flex;
-      border-bottom: solid 1px #ccc;
+      border-bottom: solid 1px #e6e6e6;
       padding: 5px;
     }
     .mainPost {
@@ -26,7 +26,7 @@
     }
     .footPost {
       display: flex;
-      border-top: solid 1px #ccc;
+      border-top: solid 1px #e6e6e6;
       padding: 5px;
     }
   }
