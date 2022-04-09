@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { deletePost } from "../features/posts/postSlice";
 import profilPicture from "../images/avataaars.png";
+import { FaTrashAlt } from "react-icons/fa";
 
 function PostItem({ post }) {
   const dispatch = useDispatch();
@@ -20,9 +21,15 @@ function PostItem({ post }) {
         </div>
         <p className="mainPost">{post.text}</p>
         <div className="footPost">
-          <p>Likes</p>
-          <p>Comments</p>
-          <button onClick={() => dispatch(deletePost(post._id))}>X</button>
+          <div className="socialBtn">
+            <p>Likes · Comments</p>
+          </div>
+          <button
+            className="deleteBtn"
+            onClick={() => dispatch(deletePost(post._id))}
+          >
+            <FaTrashAlt />
+          </button>
         </div>
       </div>
     </div>
